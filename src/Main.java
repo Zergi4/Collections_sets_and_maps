@@ -9,12 +9,15 @@ public class Main {
     }
 
     public static void task1(List<Integer> nums) {
+        List<Integer> result = new ArrayList<>();
         for (Integer num : nums) {
             if (num % 2 != 0) {
-                System.out.println(num);
+                result.add(num);
             }
-        }
+                   }
+        System.out.println(result);
     }
+
     public static void task2(List<Integer> nums) {
         Set<Integer> result = new HashSet<>();
         for (Integer num : nums) {
@@ -23,5 +26,5 @@ public class Main {
             }
         }
         System.out.println(result);
-}
+    }
 }
